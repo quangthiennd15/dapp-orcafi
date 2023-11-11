@@ -19,12 +19,9 @@ const VaultList: React.FC = () => {
         <div className="justify-between inline-flex w-full gap-1">
           <div className="w-[450px] h-12 p-1 bg-zinc-900 rounded-2xl justify-center items-center gap-1 inline-flex">
             <div className="w-[150px] self-stretch px-5 py-2 bg-neutral-800 rounded-xl justify-center items-center gap-1 flex">
-              <button
-                className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none"
-                onClick={() => navigate("/VaultDetails")}
-              >
+              <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 All Vaults
-              </button>
+              </div>
             </div>
             <div className="w-[200px] self-stretch px-5 py-2 justify-center items-center gap-2.5 flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
@@ -134,7 +131,10 @@ const VaultList: React.FC = () => {
               </div>
             </div>
             <div className="w-[225.86px] h-[52px] left-[54px] top-[2px] absolute flex-col justify-start items-start gap-1 inline-flex">
-              <div className="w-[108.55px] justify-start items-center gap-[5px] inline-flex">
+              <button
+                className="w-[108.55px] justify-start items-center gap-[5px] inline-flex "
+                onClick={() => navigate("/VaultDetails")}
+              >
                 <div className="text-white text-base font-bold font-['Helvetica Now Display'] leading-normal">
                   BTC
                 </div>
@@ -146,7 +146,7 @@ const VaultList: React.FC = () => {
                 <div className="text-white text-base font-bold font-['Helvetica Now Display'] leading-normal">
                   USDT
                 </div>
-              </div>
+              </button>
               <div className="justify-start items-start gap-1 inline-flex">
                 <div className="p-1 bg-neutral-800 rounded-[200px] justify-start items-center flex">
                   <div className="w-4 h-4 relative rounded-[200px]">

@@ -1,7 +1,5 @@
-import { lazy } from "react";
-
-const VaultDetails = lazy(() => import("../components/vaultDetails"));
-const Home = lazy(() => import("../components/home"));
+import VaultDetails from "../components/vaultDetails";
+import Home from "../components/home";
 
 interface IRoute {
   path: string;
