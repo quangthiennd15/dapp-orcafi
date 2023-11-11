@@ -11,7 +11,7 @@ import {
 function Platform() {
   return (
     <>
-      <div className="w-[83%] h-12 p-1 bg-neutral-800 rounded-2xl justify-between items-center mx-40 ">
+      <div className=" h-12 p-1 bg-neutral-800 rounded-2xl justify-between items-center mx-40 ">
         <div className="p-2 rounded-[42px] justify-between gap-2.5 flex px-10">
           <div className="w-6 h-6 relative">
             <img src={Ethereum} alt="" />

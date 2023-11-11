@@ -3,7 +3,7 @@ import { moon, bell, arrow, token } from "../../assets/icons";
 function Header() {
   return (
     <>
-      <div className=" h-[72px] bg-zinc-900 rounded-[20px]  mt-4 inline-flex pt-4 px-3 mx-40 justify-between">
+      <div className=" h-[72px] bg-zinc-900 rounded-[20px]  mt-4 inline-flex py-4 px-3 mx-40 justify-between ">
         <div className=" inline-flex pt-1">
           <div className="w-[150px] h-[32px] ">
             <img src={logo} alt="" />

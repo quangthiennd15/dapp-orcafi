@@ -1,18 +1,22 @@
 import "./App.css";
-import Header from "./components/header";
-import Overview from "./components/overview";
-import Platform from "./components/platform";
-import VaultList from "./components/vaultList";
+import routeConfig from "./constants/routeConfig";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import PageLayout from "./components/pageLayout";
+import React from "react";
+
 function App() {
   return (
-    <>
-      <div className="bg-[#010707] w-full h-screen flex flex-col ">
-        <Header />
-        <Overview />
-        <Platform />
-        <VaultList />
-      </div>
-    </>
+    <React.StrictMode>
+      <Router>
+        <PageLayout>
+          <Routes>
+            {routeConfig.map((item, index) => (
+              <Route key={index} path={item.path} element={item.component} />
+            ))}
+          </Routes>
+        </PageLayout>
+      </Router>
+    </React.StrictMode>
   );
 }
 

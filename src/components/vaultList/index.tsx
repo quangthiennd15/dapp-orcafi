@@ -6,18 +6,25 @@ import {
   usdt,
   Bnb,
   exchange,
-  orca,
+  // orca,
 } from "../../assets/icons";
-function VaultList() {
+import { useNavigate } from "react-router-dom";
+
+const VaultList: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <>
-      <div className="mx-40 my-8  ">
-        <div className="justify-between inline-flex w-full">
-          <div className="w-[500px] h-12 p-1 bg-zinc-900 rounded-2xl justify-center items-center gap-2 inline-flex">
-            <div className="w-[150px] self-stretch px-5 py-2 bg-neutral-800 rounded-xl justify-center items-center gap-2.5 flex">
-              <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
+      <div className="mx-40 my-8 ">
+        <div className="justify-between inline-flex w-full gap-1">
+          <div className="w-[450px] h-12 p-1 bg-zinc-900 rounded-2xl justify-center items-center gap-1 inline-flex">
+            <div className="w-[150px] self-stretch px-5 py-2 bg-neutral-800 rounded-xl justify-center items-center gap-1 flex">
+              <button
+                className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none"
+                onClick={() => navigate("/VaultDetails")}
+              >
                 All Vaults
-              </div>
+              </button>
             </div>
             <div className="w-[200px] self-stretch px-5 py-2 justify-center items-center gap-2.5 flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
@@ -183,7 +190,7 @@ function VaultList() {
             <div className="w-[71.27px] left-[973px] top-[16px] absolute text-white text-base font-medium font-['Helvetica Now Display'] leading-normal">
               $ 711,058
             </div>
-            <div className="w-20 h-10 px-4 py-2 left-[1480px] top-[8px] absolute bg-neutral-800 rounded-xl justify-center items-center gap-2.5 inline-flex">
+            <div className="w-20 h-10 px-4 py-2 left-[93%] top-[8px] absolute bg-neutral-800 rounded-xl justify-center items-center gap-2.5 inline-flex">
               <div className="text-center text-white text-base font-bold font-['Helvetica Now Display'] leading-normal">
                 Details
               </div>
@@ -193,5 +200,5 @@ function VaultList() {
       </div>
     </>
   );
-}
+};
 export default VaultList;
