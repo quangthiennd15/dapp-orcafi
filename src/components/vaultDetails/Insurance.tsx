@@ -1,4 +1,4 @@
-import { usdt } from "../../assets/icons";
+import { usdt, arrowup } from "../../assets/icons";
 
 function Insurance() {
   return (
@@ -8,7 +8,9 @@ function Insurance() {
           Insurance
         </div>
         <div className="w-8 h-8 rounded justify-center items-center gap-2.5 flex">
-          <div className="w-6 h-6 relative"></div>
+          <div className="w-6 h-6 relative">
+            <img src={arrowup} alt="" />
+          </div>
         </div>
       </div>
       <div className=" p-2 self-stretch bg-white bg-opacity-5 rounded-xl flex-col justify-start items-start gap-4 flex">

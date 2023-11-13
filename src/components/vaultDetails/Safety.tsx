@@ -2,7 +2,7 @@ import { arrowdown, arrowup, expand } from "../../assets/icons";
 function Safety() {
   return (
     <div className=" p-6 bg-zinc-900 rounded-[20px] flex-col items-center gap-5 inline-flex">
-      <div className="self-stretch justify-between items-start inline-flex">
+      <div className=" items-center self-stretch justify-between  inline-flex">
         <div className="text-white text-2xl font-bold font-['Helvetica Now Display'] leading-loose">
           Safety Score
         </div>
@@ -30,7 +30,7 @@ function Safety() {
         </div>
       </div>
       <div className="self-stretch h-[0px] opacity-5 border border-white"></div>
-      <div className="pr-[379px] py-5 flex-col justify-center items-start gap-5 flex">
+      <div className="2xl:pr-[379px] pr-[290px] py-5 flex-col justify-center items-start gap-5 flex">
         <div className="self-stretch justify-start items-start gap-2 inline-flex">
           <div className="w-5 h-5 justify-center items-center flex">
             <div className="w-5 h-5 relative">

@@ -7,6 +7,7 @@ import {
   Bnb,
   exchange,
   orca,
+  sortup,
 } from "../../assets/icons";
 import { useNavigate } from "react-router-dom";
 
@@ -15,20 +16,20 @@ const VaultList: React.FC = () => {
 
   return (
     <>
-      <div className="mx-80 my-8">
-        <div className="justify-between inline-flex w-full gap-1">
-          <div className=" h-12 p-1 bg-zinc-900 rounded-2xl justify-center items-center gap-2 inline-flex">
-            <div className="w-[130px] self-stretch px-5 py-2 bg-neutral-800 rounded-xl justify-center items-center gap-2.5 flex">
+      <div className="2xl:mx-80 mx-40 my-8">
+        <div className="justify-between inline-flex w-full gap-2">
+          <div className=" h-12 p-1 bg-zinc-900 rounded-2xl justify-center items-center gap-3 inline-flex">
+            <div className="w-[100px] self-stretch px-5 py-2 bg-neutral-800 rounded-xl justify-center items-center gap-2.5 flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 All Vaults
               </div>
             </div>
-            <div className="w-[140px] self-stretch px-5 py-2 justify-center items-center gap-2.5 flex">
+            <div className="w-[100px] self-stretch justify-center items-center  flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 Eligible Vaults
               </div>
             </div>
-            <div className="w-[130px] self-stretch px-5 py-2 justify-center items-center gap-2.5 flex">
+            <div className="w-[90px] self-stretch  justify-center items-center  flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 My Vaults
               </div>
@@ -105,14 +106,14 @@ const VaultList: React.FC = () => {
             </div>
           </div>
           <div className="left-[841px] top-0 absolute justify-start items-center gap-1 inline-flex">
-            <img src={sort} alt="" />
+            <img src={sortup} alt="" />
 
             <div className="text-white text-xs font-medium font-['Helvetica Now Display'] leading-none">
               APY
             </div>
           </div>
           <div className="left-[993px] top-0 absolute justify-start items-center gap-1 inline-flex">
-            <img src={sort} alt="" />
+            <img src={sortup} alt="" />
 
             <div className="text-white text-xs font-medium font-['Helvetica Now Display'] leading-none">
               TVL
@@ -123,10 +124,10 @@ const VaultList: React.FC = () => {
         <div className="w-full h-[88px] px-5 py-4 bg-zinc-900 rounded-2xl flex-col justify-start items-start gap-2 inline-flex">
           <div className="w-full h-14 relative">
             <div className="w-10 h-14 p-2 left-0 top-0 absolute bg-neutral-800 rounded-2xl flex-col justify-start items-start inline-flex">
-              <div className="w-6 h-6 relative">
+              <div className="w-6 h-4 relative">
                 <img src={btc} alt="" />
               </div>
-              <div className="w-6 h-6 relative rounded-[600px] border-0 border-neutral-800">
+              <div className="w-6 h-10 relative rounded-[600px] border-0 border-neutral-800">
                 <img src={usdt} alt="" />
               </div>
             </div>
