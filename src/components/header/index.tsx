@@ -3,12 +3,12 @@ import { moon, bell, arrow, token } from "../../assets/icons";
 function Header() {
   return (
     <>
-      <div className=" h-[72px] bg-zinc-900 rounded-[20px]  mt-4 inline-flex py-4 px-3 mx-40 justify-between ">
+      <div className=" h-[72px] bg-zinc-900 rounded-[20px]  mt-4 inline-flex py-4 px-3 mx-80 justify-between ">
         <div className=" inline-flex pt-1">
           <div className="w-[150px] h-[32px] ">
             <img src={logo} alt="" />
           </div>
-          <div className="w-[500px] h-4 justify-start items-start gap-6 inline-flex pt-2 ml-10">
+          <div className=" h-4 justify-start items-start gap-6 inline-flex pt-2 ml-10">
             <div className="opacity-80 text-white text-base font-medium font-['Helvetica Now Display'] leading-none ">
               Yeild Farming
             </div>
@@ -35,9 +35,14 @@ function Header() {
             </div>
           </div>
           <div className=" pl-1 pr-3 justify-center items-center gap-2.5 inline-flex  bg-neutral-800 rounded-xl h-10 ">
-            <div className="w-15 h-15 relative">
-              <img src={token} alt="" />
+            <div className="w-[34.43px] h-[32.76px] px-[7px] py-[9px] bg-zinc-500 rounded-[10px] flex-col justify-center items-center gap-2.5 inline-flex">
+              <div className="w-[20.43px] h-[14.76px] relative">
+                <img src={token} alt="" />
+              </div>
             </div>
+            {/* <div className="w-15 h-15 relative">
+              <img src={token} alt="" />
+            </div> */}
             <p className="text-zinc-400 text-sm font-bold font-['Helvetica Now Display'] leading-none">
               01234567...8
             </p>

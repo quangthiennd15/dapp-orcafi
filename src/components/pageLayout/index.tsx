@@ -11,17 +11,16 @@ const PageLayout = ({ children }: PageLayoutProps) => {
 
   return (
     <Form
-      className="bg-[#010707] w-full h-full flex flex-col"
+      // className="bg-[#010707] w-full h-full flex flex-col"
       layout="vertical"
       form={form}
       preserve={true}
     >
-      <div className="bg-[#010707] w-full h-full flex flex-col">
+      {/* <div className="bg-[#010707] w-full h-full flex flex-col"> */}
+      <div className=" h-screen flex flex-col bg-[#010707]">
         <Header />
 
-        <div className="flex-1 w-full max-w-container mx-auto px-4 xl:px-0">
-          {children}
-        </div>
+        <div className="w-full max-w-container ">{children}</div>
 
         <Footer />
       </div>

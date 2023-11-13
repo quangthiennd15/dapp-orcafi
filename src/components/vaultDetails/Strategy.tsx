@@ -1,9 +1,9 @@
-import { check } from "../../assets/icons";
+import { check, expand } from "../../assets/icons";
 
 function Strategy() {
   return (
     <div className="my-8 p-6 bg-zinc-900 rounded-[20px] flex-col justify-start items-start gap-5 inline-flex">
-      <div className="self-stretch justify-between items-start inline-flex">
+      <div className="self-stretch justify-between items-center inline-flex">
         <div className="text-white text-2xl font-bold font-['Helvetica Now Display'] leading-loose">
           Strategy
         </div>
@@ -13,7 +13,9 @@ function Strategy() {
               Strategy address
             </div>
             <div className="w-4 h-4 justify-center items-center flex">
-              <div className="w-4 h-4 relative"></div>
+              <div className="w-4 h-4 relative">
+                <img src={expand} alt="" />
+              </div>
             </div>
           </div>
           <div className="px-3 py-1 bg-white bg-opacity-5 rounded-lg justify-start items-center gap-2 flex">
@@ -21,7 +23,9 @@ function Strategy() {
               Vault address
             </div>
             <div className="w-4 h-4 justify-center items-center flex">
-              <div className="w-4 h-4 relative"></div>
+              <div className="w-4 h-4 relative">
+                <img src={expand} alt="" />
+              </div>
             </div>
           </div>
         </div>

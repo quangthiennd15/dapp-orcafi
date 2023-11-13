@@ -25,3 +25,4 @@ export { default as arrowdown } from "./arrowdown.svg";
 export { default as check } from "./check.svg";
 export { default as arrowup } from "./arrowup.svg";
 export { default as Question } from "./Question.svg";
+export { default as expand } from "./expand.svg";

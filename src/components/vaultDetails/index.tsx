@@ -9,6 +9,9 @@ import {
   telegram,
   twiter,
   arrowup,
+  orca,
+  expand,
+  chart,
 } from "../../assets/icons";
 import Safety from "./Safety";
 import Strategy from "./Strategy";
@@ -19,14 +22,14 @@ const VaultDetails: React.FC = () => {
   // const navigate = useNavigate();
 
   return (
-    <div className="w-full flex flex-col pb-80">
-      <div className=" mx-40 my-8 justify-between inline-flex">
-        <div className="w-[234px] h-12 justify-start items-center gap-3 inline-flex">
-          <div className="p-2 bg-neutral-800 rounded-2xl justify-start items-start flex">
-            <div className="w-8 h-8 relative">
+    <div className="px-80 flex bg-[#010707] w-full flex-col pb-80">
+      <div className="  bg-[#010707] my-8 justify-between inline-flex">
+        <div className="h-12 justify-start items-center gap-2 inline-flex">
+          <div className="w-18 p-2 bg-neutral-800 rounded-2xl justify-start items-start flex">
+            <div className="w-10">
               <img src={btc} alt="" />
             </div>
-            <div className="w-8 h-8 relative rounded-[200px] border-2 border-neutral-800">
+            <div className="w-10 h-6 ml-4 absolute rounded-[200px]  border-neutral-800 ">
               <img src={usdt} alt="" />
             </div>
           </div>
@@ -49,15 +52,15 @@ const VaultDetails: React.FC = () => {
           <div className="opacity-50 text-white text-sm font-medium font-['Helvetica Now Display'] uppercase leading-none">
             Chain:
           </div>
-          <div className="w-[120px] h-[26px] px-2.5 py-1 bg-zinc-800 rounded-lg justify-start items-center gap-1.5 inline-flex">
-            <div className="w-[14px] h-3 relative origin-top-left rotate-180">
-              {/* <img src={orca} alt="" /> */}
-            </div>
+          <div className=" h-[26px] px-2.5 py-1 bg-zinc-800 rounded-lg justify-start items-center gap-1.5 inline-flex">
+            {/* <div className="w-[14px] h-3 relative origin-top-left rotate-180"> */}
+            <img src={orca} alt="" />
+            {/* </div> */}
             <div className="text-cyan-400 text-sm font-medium font-['Helvetica Now Display'] leading-[18px]">
               Orca Wave
             </div>
           </div>
-          <div className="w-[250px] h-[26px] justify-start items-center gap-2 inline-flex">
+          <div className=" h-[26px] justify-start items-center gap-2 inline-flex">
             <div className="opacity-50 text-white text-sm font-medium font-['Helvetica Now Display'] uppercase leading-none">
               Platform:
             </div>
@@ -75,44 +78,65 @@ const VaultDetails: React.FC = () => {
         </div>
       </div>
 
-      <div className=" mx-40 gap-x-2 justify-between inline-flex ">
-        <div className="w-[65%]">
+      <div className="gap-x-6 justify-between inline-flex ">
+        <div className="">
           <div className="gap-2 inline-flex">
-            <div className="w-[250px] h-[108px] bg-zinc-900 rounded-[20px]">
+            <div className="w-[276px] h-[108px] bg-zinc-900 rounded-[20px]">
               <div className="px-4 py-2">
                 <div className="justify-between inline-flex w-full gap-x-6">
                   <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                     TVL
                   </div>
                 </div>
-                <div className="text-white text-3xl font-medium font-['Helvetica Now Display'] leading-10 pt-8">
-                  $ 0
+                <div className="">
+                  <span className="text-white text-xl font-medium font-['Helvetica Now Display'] leading-normal">
+                    $ 711,058
+                  </span>
+                  <span className="text-white text-opacity-40 text-xl font-medium font-['Helvetica Now Display'] leading-normal">
+                    .09
+                  </span>
                 </div>
               </div>
             </div>
 
-            <div className="w-[250px] h-[108px] bg-zinc-900 rounded-[20px]">
+            <div className="w-[276px]  h-[108px] bg-zinc-900 rounded-[20px]">
               <div className="px-4 py-2">
                 <div className="justify-between inline-flex w-full gap-x-6">
                   <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                     APY
                   </div>
                 </div>
-                <div className="text-white text-3xl font-medium font-['Helvetica Now Display'] leading-10 pt-8">
-                  0 %
+                <div className="w-[113px]">
+                  <span className="text-white text-xl font-medium font-['Helvetica Now Display'] leading-normal">
+                    9
+                  </span>
+                  <span className="text-white text-opacity-40 text-xl font-medium font-['Helvetica Now Display'] leading-normal">
+                    .37%
+                  </span>
+                </div>
+                <div className="w-[86px] text-slate-600 text-sm font-medium font-['Helvetica Now Display'] line-through leading-none">
+                  8.21%
                 </div>
               </div>
             </div>
 
-            <div className="w-[250px] h-[108px] bg-zinc-900 rounded-[20px]">
+            <div className="w-[276px] h-[108px] bg-zinc-900 rounded-[20px]">
               <div className="px-4 py-2">
                 <div className="justify-between inline-flex w-full gap-x-6">
                   <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                     Daily
                   </div>
                 </div>
-                <div className="text-white text-3xl font-medium font-['Helvetica Now Display'] leading-10 pt-8">
-                  0 %
+                <div className="w-[113px]">
+                  <span className="text-white text-xl font-medium font-['Helvetica Now Display'] leading-normal">
+                    0
+                  </span>
+                  <span className="text-white text-opacity-40 text-xl font-medium font-['Helvetica Now Display'] leading-normal">
+                    .0237%
+                  </span>
+                </div>
+                <div className="w-[86px] text-slate-600 text-sm font-medium font-['Helvetica Now Display'] line-through leading-none">
+                  0.0221%
                 </div>
               </div>
             </div>
@@ -164,15 +188,17 @@ const VaultDetails: React.FC = () => {
                   Explorer
                 </div>
                 <div className="w-4 h-4 justify-center items-center flex">
-                  <div className="w-4 h-4 relative"></div>
+                  <div className="w-4 h-4 relative">
+                    <img src={expand} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <div className=" p-6 bg-zinc-900 rounded-[20px] flex-col justify-start items-start gap-5 inline-flex mb-8 w-full">
-            <div className="self-stretch justify-between items-start inline-flex">
-              <div className="p-1 bg-white bg-opacity-5 rounded-2xl justify-center items-center gap-2 flex">
+            <div className="justify-center self-stretch  items-start inline-flex">
+              <div className=" p-1 bg-white bg-opacity-5 rounded-2xl  items-center gap-2 flex">
                 <div className=" px-5 py-2 bg-zinc-800 rounded-xl justify-center items-center gap-2.5 flex">
                   <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                     1 LP
@@ -188,21 +214,25 @@ const VaultDetails: React.FC = () => {
             <div className="self-stretch h-[0px] opacity-5 border border-white"></div>
             <div className=" justify-start items-start gap-5 inline-flex">
               <div className="px-6 pt-[30px] pb-5 bg-neutral-800 rounded-2xl flex-col justify-end items-center gap-[30px] inline-flex">
-                <div className=" relative">
-                  <div className=" left-0 top-0 absolute rounded-full border-8 border-white border-opacity-5">
-                    {/* <img src={chart} alt="" /> */}
+                <div className="w-[110px] h-[110px] relative">
+                  <div className="w-[110px] h-[110px] left-0 top-0 absolute rounded-full border-8 border-white border-opacity-5">
+                    <img src={chart} alt="" />
                   </div>
                 </div>
                 <div className="self-stretch justify-between items-start inline-flex">
                   <div className="justify-start items-start gap-1.5 flex">
-                    <div className="w-5 h-5 relative rounded-[200px] border-2 border-neutral-800"></div>
+                    <div className="w-5 h-5 relative rounded-[200px] border-2 border-neutral-800">
+                      <img src={usdt} alt="" />
+                    </div>
                     <div className="text-white text-sm font-bold font-['Helvetica Now Display'] leading-tight tracking-wide">
                       50.0%
                     </div>
                   </div>
-                  <div className="w-5 h-[0px] origin-top-left rotate-90 border-2 border-neutral-600"></div>
+                  <div className="w-6 h-[0px] mt-2 rotate-90 border-2 border-neutral-600"></div>
                   <div className="justify-start items-start gap-1.5 flex">
-                    <div className="w-5 h-5 relative rounded-[200px] border-2 border-neutral-800"></div>
+                    <div className="w-5 h-5 relative rounded-[200px] border-2 border-neutral-800">
+                      <img src={btc} alt="" />
+                    </div>
                     <div className="text-red-500 text-sm font-bold font-['Helvetica Now Display'] leading-tight tracking-wide">
                       50.0%
                     </div>
@@ -319,8 +349,8 @@ const VaultDetails: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-[35%]">
-          <div className="w-[100%] h-[108px] bg-zinc-900 rounded-[20px]">
+        <div className="">
+          <div className="w-[413px] h-[108px] bg-zinc-900 rounded-[20px]">
             <div className="w-[163px] h-[44.36px] flex-col justify-start items-start gap-1.5 inline-flex pt-6 px-6">
               <div className="w-[86px] opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 Your Deposit

@@ -13,10 +13,10 @@ function Activeboost() {
           </span>
         </div>
         <div className="w-6 h-6 relative">
-          <div className="left-[3px] top-[3px] absolute rounded-full border-2 border-slate-300">
+          <div className="left-[3px] top-[3px] absolute rounded-full  border-slate-300">
             <img src={Question} alt="" />
           </div>
-          <div className="w-px h-px  top-[17.50px] absolute bg-slate-300 rounded-full border border-slate-300"></div>
+          {/* <div className="w-px h-px  top-[17.50px] absolute bg-slate-300 rounded-full border border-slate-300"></div> */}
         </div>
       </div>
       <div className="self-stretch justify-start items-start gap-2 inline-flex">

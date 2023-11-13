@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <div className="w-65% mx-40 ">
-      <div className="text-gray-700 text-sm font-medium font-['Helvetica Now Display'] leading-tight">
+    <div className="px-80 bg-[#010707] ">
+      <div className="text-gray-700 text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
         Reminder Risk
       </div>
       <div className=" h-[68px] text-justify text-gray-700 text-xs font-normal font-['Helvetica Now Display'] leading-none">

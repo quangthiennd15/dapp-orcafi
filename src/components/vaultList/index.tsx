@@ -6,7 +6,7 @@ import {
   usdt,
   Bnb,
   exchange,
-  // orca,
+  orca,
 } from "../../assets/icons";
 import { useNavigate } from "react-router-dom";
 
@@ -15,37 +15,37 @@ const VaultList: React.FC = () => {
 
   return (
     <>
-      <div className="mx-40 my-8 ">
+      <div className="mx-80 my-8">
         <div className="justify-between inline-flex w-full gap-1">
-          <div className="w-[450px] h-12 p-1 bg-zinc-900 rounded-2xl justify-center items-center gap-1 inline-flex">
-            <div className="w-[150px] self-stretch px-5 py-2 bg-neutral-800 rounded-xl justify-center items-center gap-1 flex">
+          <div className=" h-12 p-1 bg-zinc-900 rounded-2xl justify-center items-center gap-2 inline-flex">
+            <div className="w-[130px] self-stretch px-5 py-2 bg-neutral-800 rounded-xl justify-center items-center gap-2.5 flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 All Vaults
               </div>
             </div>
-            <div className="w-[200px] self-stretch px-5 py-2 justify-center items-center gap-2.5 flex">
+            <div className="w-[140px] self-stretch px-5 py-2 justify-center items-center gap-2.5 flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 Eligible Vaults
               </div>
             </div>
-            <div className="w-[200px] self-stretch px-5 py-2 justify-center items-center gap-2.5 flex">
+            <div className="w-[130px] self-stretch px-5 py-2 justify-center items-center gap-2.5 flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 My Vaults
               </div>
             </div>
           </div>
-          <div className="w-[500px] h-12 p-1 bg-zinc-900 rounded-2xl justify-center items-center gap-2 inline-flex">
+          <div className=" h-12 p-1 bg-zinc-900 rounded-2xl justify-center items-center gap-1 inline-flex">
             <div className="w-[95px] self-stretch px-5 py-2 justify-center items-center gap-2.5 flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 Features
               </div>
             </div>
-            <div className="w-[200px] self-stretch px-5 py-2 rounded-[200px] justify-center items-center gap-[11px] flex">
+            <div className="w-[120px] self-stretch px-5 py-2 rounded-[200px] justify-center items-center gap-[11px] flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 Stable coins
               </div>
             </div>
-            <div className="w-[150px] self-stretch px-5 py-2 rounded-[32px] justify-center items-center gap-2.5 flex">
+            <div className="w-[120px] self-stretch px-5 py-2 rounded-[32px] justify-center items-center gap-2.5 flex">
               <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 Blue Chip
               </div>
@@ -126,15 +126,12 @@ const VaultList: React.FC = () => {
               <div className="w-6 h-6 relative">
                 <img src={btc} alt="" />
               </div>
-              <div className="w-6 h-6 relative rounded-[200px] border-2 border-neutral-800">
+              <div className="w-6 h-6 relative rounded-[600px] border-0 border-neutral-800">
                 <img src={usdt} alt="" />
               </div>
             </div>
             <div className="w-[225.86px] h-[52px] left-[54px] top-[2px] absolute flex-col justify-start items-start gap-1 inline-flex">
-              <button
-                className="w-[108.55px] justify-start items-center gap-[5px] inline-flex "
-                onClick={() => navigate("/VaultDetails")}
-              >
+              <div className="w-[108.55px] justify-start items-center gap-[5px] inline-flex ">
                 <div className="text-white text-base font-bold font-['Helvetica Now Display'] leading-normal">
                   BTC
                 </div>
@@ -146,12 +143,12 @@ const VaultList: React.FC = () => {
                 <div className="text-white text-base font-bold font-['Helvetica Now Display'] leading-normal">
                   USDT
                 </div>
-              </button>
+              </div>
               <div className="justify-start items-start gap-1 inline-flex">
                 <div className="p-1 bg-neutral-800 rounded-[200px] justify-start items-center flex">
                   <div className="w-4 h-4 relative rounded-[200px]">
-                    <div className="w-6 h-6 left-[-4px] top-[-4px] absolute bg-yellow-500 rounded-full"></div>
-                    <div className="w-[9.30px] h-[10.94px] left-[3.35px] top-[2.53px] absolute">
+                    <div className="w-4 h-4  absolute bg-yellow-500 rounded-full"></div>
+                    <div className="w-[16px] h-[16px]  absolute">
                       <img src={Bnb} alt="" />
                     </div>
                   </div>
@@ -164,8 +161,8 @@ const VaultList: React.FC = () => {
                   </div>
                 </div>
                 <div className="px-2.5 py-1 bg-zinc-800 rounded-lg justify-start items-center gap-1.5 flex">
-                  <div className="w-[10.86px] h-3 relative origin-top-left rotate-180">
-                    {/* <img src={orca} alt="" /> */}
+                  <div className="w-[12px] h-3 relative ">
+                    <img src={orca} alt="" />
                   </div>
                   <div className="text-cyan-400 text-xs font-medium font-['Helvetica Now Display'] leading-none">
                     Orca Wave
@@ -191,9 +188,12 @@ const VaultList: React.FC = () => {
               $ 711,058
             </div>
             <div className="w-20 h-10 px-4 py-2 left-[93%] top-[8px] absolute bg-neutral-800 rounded-xl justify-center items-center gap-2.5 inline-flex">
-              <div className="text-center text-white text-base font-bold font-['Helvetica Now Display'] leading-normal">
+              <button
+                className="text-center text-white text-base font-bold font-['Helvetica Now Display'] leading-normal"
+                onClick={() => navigate("/VaultDetails")}
+              >
                 Details
-              </div>
+              </button>
             </div>
           </div>
         </div>

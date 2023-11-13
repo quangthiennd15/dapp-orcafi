@@ -3,8 +3,8 @@ import { arrow } from "../../assets/icons";
 function Overview() {
   return (
     // <div>
-    <div className="inline-flex mx-40 my-8 justify-between gap-4">
-      <div className="w-[217px] h-[130px] flex-col gap-3.5 inline-flex ">
+    <div className="inline-flex mx-80 my-8 justify-between ">
+      <div className="  flex-col gap-3.5 inline-flex ">
         <div className="text-white text-2xl font-medium font-['Helvetica Now Display'] leading-7">
           Overview
         </div>
@@ -35,14 +35,14 @@ function Overview() {
         </div>
       </div>
 
-      <div className="inline-flex gap-2">
+      <div className="inline-flex gap-3">
         <div className="w-[227px] h-[134px] bg-zinc-900 rounded-[20px]">
           <div className="px-4 py-4">
             <div className="justify-between inline-flex w-full gap-x-6">
               <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                 Deposited
               </div>
-              <div className=" bg-zinc-600 rounded-[20px]">
+              <div className=" bg-zinc-800 rounded-[20px] p-2">
                 <img src={arrow} alt="" />
               </div>
             </div>
@@ -57,7 +57,7 @@ function Overview() {
               <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                 Monthly Yield
               </div>
-              <div className=" bg-zinc-600 rounded-[20px]">
+              <div className=" bg-zinc-800 rounded-[20px] p-2">
                 <img src={arrow} alt="" />
               </div>
             </div>
@@ -72,7 +72,7 @@ function Overview() {
               <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                 Daily Yield
               </div>
-              <div className=" bg-zinc-600 rounded-[20px]">
+              <div className=" bg-zinc-800 rounded-[20px] p-2">
                 <img src={arrow} alt="" />
               </div>
             </div>
@@ -87,7 +87,7 @@ function Overview() {
               <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                 Avg. APY
               </div>
-              <div className=" bg-zinc-600 rounded-[20px]">
+              <div className=" bg-zinc-800 rounded-[20px] p-2">
                 <img src={arrow} alt="" />
               </div>
             </div>
