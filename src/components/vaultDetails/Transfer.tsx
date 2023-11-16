@@ -3,26 +3,14 @@ import { btc, usdt, arrow, expand, ifo } from "../../assets/icons";
 function Transfer() {
   return (
     <div className="my-8 p-6 bg-zinc-900 rounded-[20px] flex-col justify-start items-center gap-6 inline-flex">
-      {/* <div className="self-stretch p-2 bg-neutral-900 rounded-2xl justify-start items-start gap-3 inline-flex">
-        <div className="grow shrink basis-0 h-[46px] p-2 bg-zinc-800 rounded-xl border-b-2 justify-center items-center flex">
-          <div className="text-white text-xl font-bold font-['Helvetica Now Display'] leading-[30px]">
-            Deposit
-          </div>
-        </div>
-        <div className="grow shrink basis-0 h-[46px] py-2 rounded-xl border-b-2 justify-center items-center flex">
-          <div className="opacity-40 text-white text-xl font-bold font-['Helvetica Now Display'] leading-[30px]">
-            Withdraw
-          </div>
-        </div>
-      </div> */}
       <div className="bg-[#010707] h-[62px] p-2 justify-center self-stretch  items-center inline-flex rounded-2xl">
         <div className=" p-1 rounded-2xl  items-center gap-2 flex">
-          <div className="w-[168px] h-[46px]  bg-zinc-800 rounded-xl justify-center items-center gap-2.5 flex">
+          <div className="w-[158px] h-[46px]  bg-zinc-800 rounded-xl justify-center items-center gap-2.5 flex">
             <div className="text-white text-xl font-bold font-['Helvetica Now Display'] leading-[30px]">
               Deposit
             </div>
           </div>
-          <div className="w-[168px] justify-center items-center gap-2.5 flex">
+          <div className="w-[158px] justify-center items-center gap-2.5 flex">
             <div className="opacity-40 text-white text-xl font-bold font-['Helvetica Now Display'] leading-[30px]">
               Withdraw
             </div>

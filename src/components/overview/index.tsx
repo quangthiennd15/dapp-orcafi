@@ -3,7 +3,7 @@ import { arrow } from "../../assets/icons";
 function Overview() {
   return (
     // <div>
-    <div className="inline-flex 2xl:mx-80 mx-40 my-8 justify-between ">
+    <div className="inline-flex 2xl:mx-80 mx-40 my-8 justify-between">
       <div className="  flex-col gap-3.5 inline-flex ">
         <div className="text-white text-2xl font-medium font-['Helvetica Now Display'] leading-7">
           Overview
@@ -36,9 +36,9 @@ function Overview() {
       </div>
 
       <div className="inline-flex gap-3">
-        <div className="w-[227px] h-[134px] bg-zinc-900 rounded-[20px]">
+        <div className=" bg-zinc-900 rounded-[20px]">
           <div className="px-4 py-4">
-            <div className="justify-between inline-flex w-full gap-x-6 mb-8">
+            <div className="justify-between inline-flex w-full gap-x-20 mb-8">
               <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                 Index Price
               </div>
@@ -49,7 +49,7 @@ function Overview() {
             <div className=" opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
               Index Price
             </div>
-            <div className="w-[113px] ">
+            <div className=" ">
               <span className="text-white text-xl font-medium font-['Helvetica Now Display'] leading-normal">
                 $ 54,654
               </span>
@@ -59,9 +59,9 @@ function Overview() {
             </div>
           </div>
         </div>
-        <div className="w-[227px] h-[134px] bg-zinc-900 rounded-[20px]">
+        <div className=" bg-zinc-900 rounded-[20px]">
           <div className="px-4 py-4">
-            <div className="justify-between inline-flex w-full gap-x-6 mb-8">
+            <div className="justify-between inline-flex w-full  gap-x-20 mb-8">
               <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                 Index Price
               </div>
@@ -72,7 +72,7 @@ function Overview() {
             <div className=" opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
               Index Price
             </div>
-            <div className="w-[113px] ">
+            <div className=" ">
               <span className="text-white text-xl font-medium font-['Helvetica Now Display'] leading-normal">
                 $ 54,654
               </span>
@@ -82,9 +82,9 @@ function Overview() {
             </div>
           </div>
         </div>
-        <div className="w-[227px] h-[134px] bg-zinc-900 rounded-[20px]">
+        <div className=" bg-zinc-900 rounded-[20px]">
           <div className="px-4 py-4">
-            <div className="justify-between inline-flex w-full gap-x-6 mb-8">
+            <div className="justify-between inline-flex w-full  gap-x-20 mb-8">
               <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                 Index Price
               </div>
@@ -95,7 +95,7 @@ function Overview() {
             <div className=" opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
               Index Price
             </div>
-            <div className="w-[113px] ">
+            <div className=" ">
               <span className="text-white text-xl font-medium font-['Helvetica Now Display'] leading-normal">
                 $ 54,654
               </span>
@@ -105,9 +105,9 @@ function Overview() {
             </div>
           </div>
         </div>
-        <div className="w-[227px] h-[134px] bg-zinc-900 rounded-[20px]">
+        <div className=" bg-zinc-900 rounded-[20px]">
           <div className="px-4 py-4">
-            <div className="justify-between inline-flex w-full gap-x-6 mb-8">
+            <div className="justify-between inline-flex w-full  gap-x-20 mb-8">
               <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                 Index Price
               </div>
@@ -118,7 +118,7 @@ function Overview() {
             <div className=" opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
               Index Price
             </div>
-            <div className="w-[113px] ">
+            <div className=" ">
               <span className="text-white text-xl font-medium font-['Helvetica Now Display'] leading-normal">
                 $ 54,654
               </span>

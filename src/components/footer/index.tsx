@@ -1,10 +1,10 @@
 function Footer() {
   return (
-    <div className="2xl:px-80 px-40 bg-[#010707] ">
+    <div className="2xl:px-80 px-40 pt-40 bg-[#010707] ">
       <div className="text-gray-700 text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
         Reminder Risk
       </div>
-      <div className=" h-[68px] text-justify text-gray-700 text-xs font-normal font-['Helvetica Now Display'] leading-none">
+      <div className="min-h-[68px] text-justify text-gray-700 text-xs font-normal font-['Helvetica Now Display'] leading-none">
         By acquiring WAVE Tokens, you confirm that you have read this
         Whitepaper, understand the risks and implications of purchasing WAVE
         Tokens, and accept that you are fully responsible for all the risks

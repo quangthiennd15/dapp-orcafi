@@ -256,7 +256,7 @@ const VaultDetails: React.FC = () => {
               </div>
               <div className="rounded-[10px] flex-col justify-center items-start gap-px inline-flex">
                 <div className="self-stretch h-[41px] justify-start items-start gap-px inline-flex">
-                  <div className="w-40 self-stretch px-4 py-2 bg-neutral-800 justify-start items-center gap-2 flex">
+                  <div className="rounded-tl-2xl w-40 self-stretch px-4 py-2 bg-neutral-800 justify-start items-center gap-2 flex">
                     <div className="opacity-50 text-white text-base font-normal font-['Helvetica Now Display'] leading-normal">
                       Asset
                     </div>
@@ -266,7 +266,7 @@ const VaultDetails: React.FC = () => {
                       Token amount
                     </div>
                   </div>
-                  <div className="w-40 self-stretch px-4 py-2 bg-neutral-800 justify-end items-center gap-2 flex">
+                  <div className="rounded-tr-2xl w-40 self-stretch px-4 py-2 bg-neutral-800 justify-end items-center gap-2 flex">
                     <div className="opacity-50 text-white text-base font-normal font-['Helvetica Now Display'] leading-normal">
                       Value
                     </div>
@@ -317,7 +317,7 @@ const VaultDetails: React.FC = () => {
                   </div>
                 </div>
                 <div className="self-stretch h-[55px] justify-start items-start gap-px inline-flex rounded-2xl">
-                  <div className="w-40 self-stretch px-4 py-2 bg-neutral-800 justify-start items-center gap-2 flex">
+                  <div className="rounded-bl-2xl w-40 self-stretch px-4 py-2 bg-neutral-800 justify-start items-center gap-2 flex">
                     <div className="justify-start items-center gap-2 flex">
                       <div className="w-12 rounded-2xl justify-start items-start flex">
                         <div className="w-8 h-6 absolute">
@@ -337,7 +337,7 @@ const VaultDetails: React.FC = () => {
                       1
                     </div>
                   </div>
-                  <div className="w-40 self-stretch px-4 py-2 bg-neutral-800 justify-end items-center gap-2 flex">
+                  <div className="rounded-br-2xl w-40 self-stretch px-4 py-2 bg-neutral-800 justify-end items-center gap-2 flex">
                     <div className="text-white text-base font-bold font-['Helvetica Now Display'] leading-normal">
                       $65.51B
                     </div>
@@ -365,7 +365,7 @@ const VaultDetails: React.FC = () => {
         </div>
 
         <div className="">
-          <div className="w-[413px] h-[108px] bg-zinc-900 rounded-[20px]">
+          <div className="2xl:w-[390px] w-[413px] h-[108px] bg-zinc-900 rounded-[20px]">
             <div className="w-[163px] h-[44.36px] flex-col justify-start items-start gap-1.5 inline-flex pt-6 px-6">
               <div className="w-[86px] opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
                 Your Deposit

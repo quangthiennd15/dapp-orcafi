@@ -17,7 +17,7 @@ const PageLayout = ({ children }: PageLayoutProps) => {
       preserve={true}
     >
       {/* <div className="bg-[#010707] w-full h-full flex flex-col"> */}
-      <div className=" h-screen flex flex-col bg-[#010707]">
+      <div className=" h-screen flex flex-col bg-[#010707]  min-w-[1280px]">
         <Header />
 
         <div className="w-full max-w-container ">{children}</div>
