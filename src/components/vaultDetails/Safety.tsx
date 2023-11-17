@@ -1,7 +1,7 @@
 import { arrowdown, arrowup, expand } from "../../assets/icons";
 function Safety() {
   return (
-    <div className=" p-6 bg-zinc-900 rounded-[20px] flex-col items-center gap-5 inline-flex">
+    <div className="w-full p-6 bg-zinc-900 rounded-[20px] flex-col items-center gap-5 inline-flex">
       <div className=" items-center self-stretch justify-between  inline-flex">
         <div className="text-white text-2xl font-bold font-['Helvetica Now Display'] leading-loose">
           Safety Score

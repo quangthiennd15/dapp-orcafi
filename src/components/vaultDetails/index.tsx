@@ -23,7 +23,7 @@ const VaultDetails: React.FC = () => {
   // const navigate = useNavigate();
 
   return (
-    <div className="2xl:px-80 px-40 flex bg-[#010707] w-full flex-col pb-80">
+    <div className="max-w-[1280px] mx-auto bg-[#010707] ">
       <div className="w-[156px] h-12 p-3 bg-zinc-800 rounded-xl justify-start items-center gap-3 inline-flex relative left-[87%]">
         <div className="justify-start items-center gap-2 flex">
           <div className="w-6 h-6 relative">
@@ -36,7 +36,7 @@ const VaultDetails: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="  bg-[#010707] mb-8 justify-between inline-flex">
+      <div className="  bg-[#010707] mb-8 w-full justify-between inline-flex">
         <div className="h-12 justify-start items-center gap-2 inline-flex">
           <div className="w-18 p-2 bg-neutral-800 rounded-2xl justify-start items-start flex">
             <div className="w-10">
@@ -94,7 +94,7 @@ const VaultDetails: React.FC = () => {
       <div className="gap-x-6 justify-between inline-flex ">
         <div className="">
           <div className="gap-2 inline-flex">
-            <div className="2xl:w-[276px] w-[245px] h-[108px] bg-zinc-900 rounded-[20px]">
+            <div className=" bg-zinc-900 rounded-[20px] pr-32">
               <div className="px-6 py-6">
                 <div className="justify-between inline-flex w-full gap-x-6">
                   <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
@@ -103,7 +103,7 @@ const VaultDetails: React.FC = () => {
                 </div>
                 <div className="">
                   <span className="text-white text-xl font-medium font-['Helvetica Now Display'] leading-normal">
-                    $ 711,058
+                    $711,058
                   </span>
                   <span className="text-white text-opacity-40 text-xl font-medium font-['Helvetica Now Display'] leading-normal">
                     .09
@@ -112,7 +112,7 @@ const VaultDetails: React.FC = () => {
               </div>
             </div>
 
-            <div className="2xl:w-[276px] w-[245px]  h-[108px] bg-zinc-900 rounded-[20px]">
+            <div className=" bg-zinc-900 rounded-[20px] pr-28">
               <div className="px-6 py-6">
                 <div className="justify-between inline-flex w-full gap-x-6">
                   <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
@@ -133,7 +133,7 @@ const VaultDetails: React.FC = () => {
               </div>
             </div>
 
-            <div className="2xl:w-[276px] w-[245px] h-[108px] bg-zinc-900 rounded-[20px]">
+            <div className=" bg-zinc-900 rounded-[20px] pr-32">
               <div className="px-6 py-6">
                 <div className="justify-between inline-flex w-full gap-x-6">
                   <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">

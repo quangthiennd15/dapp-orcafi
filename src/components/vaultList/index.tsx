@@ -16,7 +16,7 @@ const VaultList: React.FC = () => {
 
   return (
     <>
-      <div className="2xl:mx-80 mx-40 my-8 ">
+      <div className=" my-8 ">
         <div className=" inline-flex w-full">
           <div className="mr-[10px] p-1 bg-zinc-900 rounded-2xl justify-between items-center inline-flex">
             <div className="min-w-[130px] self-stretch py-4  bg-neutral-800 rounded-xl justify-center items-center flex">

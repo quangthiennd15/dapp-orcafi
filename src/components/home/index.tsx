@@ -4,7 +4,7 @@ import VaultList from "../vaultList";
 function Home() {
   return (
     <>
-      <div className="bg-[#010707]  h-screen flex flex-col  min-w-[1280px]">
+      <div className="bg-[#010707] max-w-[1280px] mx-auto">
         <Overview />
         <Platform />
         <VaultList />

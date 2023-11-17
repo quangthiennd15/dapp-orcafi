@@ -3,8 +3,8 @@ import { arrow } from "../../assets/icons";
 function Overview() {
   return (
     // <div>
-    <div className="inline-flex 2xl:mx-80 mx-40 my-8 justify-between">
-      <div className="  flex-col gap-3.5 inline-flex ">
+    <div className=" my-8 justify-between w-full inline-flex ">
+      <div className="  flex-col gap-3.5 ">
         <div className="text-white text-2xl font-medium font-['Helvetica Now Display'] leading-7">
           Overview
         </div>
