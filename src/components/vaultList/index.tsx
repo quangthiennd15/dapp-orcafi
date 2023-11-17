@@ -1,3 +1,4 @@
+import { useRef, useState, useEffect } from "react";
 import {
   arrow,
   Search,
@@ -13,6 +14,38 @@ import { useNavigate } from "react-router-dom";
 
 const VaultList: React.FC = () => {
   const navigate = useNavigate();
+  const componentRef = useRef(null);
+  const modalRef = useRef(null);
+
+  const [openFilter, setopenFilter] = useState(false);
+
+  const onClickFilter = () => {
+    setopenFilter(true);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        componentRef.current &&
+        event.target &&
+        event.target instanceof Node &&
+        !componentRef.current.contains(event.target) &&
+        !modalRef.current?.contains(event.target)
+      ) {
+        setopenFilter(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return removeEventListener("click", handleClickOutside);
+  }, []);
+
+  // useEffect(() => {
+  //   if (openFilter && componentRef.current) {
+  //     setopenFilter(false);
+  //   }
+  // }, [openFilter]);
+
+  // const filter = useMemo(() => {}, []);
 
   return (
     <>
@@ -36,7 +69,7 @@ const VaultList: React.FC = () => {
             </div>
           </div>
 
-          <div className="mr-[10px] p-4 bg-zinc-900 rounded-2xl justify-center items-center inline-flex gap-4">
+          <div className=" mr-[10px] p-4 bg-zinc-900 rounded-2xl justify-center items-center inline-flex gap-4">
             <div className="text-white text-sm font-medium font-['Helvetica Now Display'] leading-none">
               Features
             </div>
@@ -53,18 +86,60 @@ const VaultList: React.FC = () => {
               Correlated
             </div>
           </div>
-          <div className="mr-[10px] px-4 py-2 bg-neutral-800 rounded-2xl justify-center items-center gap-4 inline-flex">
+
+          <button
+            className=" hover:bg-white/10  mr-[10px] px-4 py-2 bg-neutral-800 rounded-2xl justify-center items-center gap-4 inline-flex"
+            onClick={onClickFilter}
+            ref={modalRef}
+          >
             <div className="text-center text-white text-base font-bold font-['Helvetica Now Display'] leading-normal">
               Filters
             </div>
-            <div className="bg-zinc-900 rounded-lg justify-center items-center gap-2.5 flex">
+            <div className=" bg-zinc-900 rounded-lg justify-center items-center gap-2.5 flex">
               <div className="opacity-30 justify-center items-center gap-2.5 flex">
                 <div className="w-6 h-6 relative p-1">
                   <img src={arrow} alt="" />
                 </div>
               </div>
             </div>
-          </div>
+          </button>
+          {openFilter && (
+            <div
+              ref={componentRef}
+              className="bg-[#1D1D1F] w-[350px]  absolute rounded-lg mt-[56px] left-[42%] p-6"
+            >
+              <div className="text-white text-base font-medium font-['Helvetica Now Display'] leading-normal">
+                Showing 104/2600 vaults
+              </div>
+
+              <div className="pt-2 gap-y-2 pb-4">
+                <div>
+                  <label className="inline-flex items-center">
+                    <input type="checkbox" className=" h-5 w-5 " />
+                    <span className="ml-2 text-white text-base font-medium font-['Helvetica Now Display'] leading-normal">
+                      🔥 Boosted vaults
+                    </span>
+                  </label>
+                </div>
+                <div>
+                  <label className="inline-flex items-center">
+                    <input type="checkbox" className=" h-5 w-5 " />
+                    <span className="ml-2 text-white text-base font-medium font-['Helvetica Now Display'] leading-normal">
+                      Retired vaults
+                    </span>
+                  </label>
+                </div>
+                <div>
+                  <label className="inline-flex items-center">
+                    <input type="checkbox" className=" h-5 w-5 " />
+                    <span className="ml-2 text-white text-base font-medium font-['Helvetica Now Display'] leading-normal">
+                      Paused vaults
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          )}
 
           <div className="flex-1 pl-4 py-2.5 bg-zinc-900 rounded-2xl justify-end items-center gap-2.5 inline-flex">
             <div className="w-4 h-4 justify-center items-center flex">
@@ -116,8 +191,8 @@ const VaultList: React.FC = () => {
         </div>
 
         <div className="w-full p-4 bg-zinc-900 rounded-2xl flex-col justify-start items-start gap-2 inline-flex">
-          <div className=" relative inline-flex justify-between items-center w-full">
-            <div className="relative inline-flex items-center">
+          <div className=" inline-flex justify-between items-center w-full">
+            <div className=" inline-flex items-center">
               <div className="w-10 h-14 p-2  bg-neutral-800 rounded-2xl flex-col justify-start items-start inline-flex">
                 <div className="w-6 h-4 relative">
                   <img src={btc} alt="" />

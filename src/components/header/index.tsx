@@ -1,15 +1,61 @@
 import { logo } from "../../assets/images";
 import { moon, bell, arrow, token } from "../../assets/icons";
-function Header() {
+import { Link, useLocation } from "react-router-dom";
+import { useMemo } from "react";
+
+const menuList = [
+  {
+    name: "Yeild Farming",
+    link: "/",
+  },
+  {
+    name: "Dashboard",
+    link: "/Dashboard",
+  },
+  {
+    name: "Staking",
+    link: "/Staking",
+  },
+];
+
+const Header: React.FC = () => {
+  const location = useLocation();
+
+  const renderMenuLists = useMemo(() => {
+    return (
+      <>
+        <ul className="h-4 items-center gap-2 inline-flex  ml-10 pt-2">
+          {menuList.map((item, index) => (
+            <li
+              aria-selected={location.pathname === item.link}
+              key={index}
+              className="hover:bg-white/10 aria-selected:bg-white/10 bg-[#010707] rounded-[20px] py-3"
+            >
+              <Link
+                to={item.link}
+                className=" opacity-80 text-white text-base font-medium font-['Helvetica Now Display'] leading-none px-12 "
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        ;
+      </>
+    );
+  }, [location.pathname]);
+
   return (
     <>
       <div className="bg-[#010707]">
         <div className=" flex items-center bg-zinc-900 rounded-[20px] justify-between p-4 mt-4 mx-auto max-w-[1280px]">
           <div className=" inline-flex pt-1">
             <div className="w-[150px] h-[32px] ">
-              <img src={logo} alt="" />
+              <Link to="/">
+                <img src={logo} alt="" />
+              </Link>
             </div>
-            <div className=" h-4 justify-start items-start gap-6 inline-flex pt-2 ml-10">
+            {/* <div className=" h-4 justify-start items-start gap-6 inline-flex pt-2 ml-10">
               <div className="opacity-80 text-white text-base font-medium font-['Helvetica Now Display'] leading-none ">
                 Yeild Farming
               </div>
@@ -21,7 +67,8 @@ function Header() {
               <div className="opacity-80 text-white text-base font-medium font-['Helvetica Now Display'] leading-none">
                 Staking
               </div>
-            </div>
+            </div> */}
+            {renderMenuLists}
           </div>
 
           <div className=" inline-flex gap-2 ">
@@ -54,5 +101,5 @@ function Header() {
       </div>
     </>
   );
-}
+};
 export default Header;
