@@ -79,7 +79,7 @@ function Profile() {
         {openWallet && (
           <div
             ref={componentRef}
-            className="z-[99] w-[300px] bg-neutral-800 absolute mt-2  py-2  right-[320px] rounded-2xl text-white font-bold font-['Helvetica Now Display'] leading-[30px]"
+            className="z-[99] w-[300px] bg-neutral-800 absolute mt-2 right-[20px] py-2  rounded-2xl text-white font-bold font-['Helvetica Now Display'] leading-[30px]"
           >
             <div className="mb-4">WALLET</div>
             <div>Address: {addressEllipsis(address, 8)}</div>

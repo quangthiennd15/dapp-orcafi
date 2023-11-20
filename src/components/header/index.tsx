@@ -49,7 +49,7 @@ const Header: React.FC = () => {
   return (
     <>
       <div className="bg-[#010707] ">
-        <div className=" flex items-center bg-zinc-900 rounded-[20px] justify-between p-4 mt-4 mx-auto max-w-[1280px]">
+        <div className="relative flex items-center bg-zinc-900 rounded-[20px] justify-between p-4 mt-4 mx-auto max-w-[1280px]">
           <div className=" inline-flex pt-1">
             <div className="w-[150px] h-[32px] ">
               <Link to="/">
@@ -61,12 +61,12 @@ const Header: React.FC = () => {
 
           <div className=" inline-flex gap-2 ">
             <div className="w-10 h-10 p-3 bg-neutral-800 rounded-xl ">
-              <div className="w-4 h-4 relative">
+              <div className="w-4 h-4 ">
                 <img src={bell} alt="" />
               </div>
             </div>
             <div className="w-10 h-10 p-3 bg-neutral-800 rounded-xl">
-              <div className="w-4 h-4 relative">
+              <div className="w-4 h-4 ">
                 <img src={moon} alt="" />
               </div>
             </div>
