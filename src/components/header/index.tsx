@@ -1,5 +1,5 @@
 import { logo } from "../../assets/images";
-import { moon, bell, arrow, token } from "../../assets/icons";
+import { moon, bell } from "../../assets/icons";
 import { Link, useLocation } from "react-router-dom";
 import { useMemo } from "react";
 import WalletModal from "./WalletModal";

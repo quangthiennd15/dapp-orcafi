@@ -36,8 +36,8 @@ function Profile() {
   const { data: balance } = useBalance({ address });
 
   const [openWallet, setopenWallet] = useState(false);
-  const componentRef = useRef(null);
-  const modalRef = useRef(null);
+  const componentRef = useRef<HTMLDivElement>(null);
+  const modalRef = useRef<HTMLButtonElement>(null);
 
   const onClickWallet = () => {
     setopenWallet(true);
@@ -86,7 +86,7 @@ function Profile() {
             <p>Balance: {balance ? balance.formatted : "Loading..."} FTM</p>
             <button
               className="mx-4 px-16 my-4 bg-red-500 rounded-xl border border-red-500 justify-center items-center gap-2 inline-flex"
-              onClick={disconnect}
+              onClick={() => disconnect()}
             >
               Disconnect
             </button>
