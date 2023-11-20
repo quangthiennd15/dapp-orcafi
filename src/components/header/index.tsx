@@ -2,6 +2,7 @@ import { logo } from "../../assets/images";
 import { moon, bell, arrow, token } from "../../assets/icons";
 import { Link, useLocation } from "react-router-dom";
 import { useMemo } from "react";
+import WalletModal from "./WalletModal";
 
 const menuList = [
   {
@@ -47,7 +48,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <div className="bg-[#010707]">
+      <div className="bg-[#010707] ">
         <div className=" flex items-center bg-zinc-900 rounded-[20px] justify-between p-4 mt-4 mx-auto max-w-[1280px]">
           <div className=" inline-flex pt-1">
             <div className="w-[150px] h-[32px] ">
@@ -55,19 +56,6 @@ const Header: React.FC = () => {
                 <img src={logo} alt="" />
               </Link>
             </div>
-            {/* <div className=" h-4 justify-start items-start gap-6 inline-flex pt-2 ml-10">
-              <div className="opacity-80 text-white text-base font-medium font-['Helvetica Now Display'] leading-none ">
-                Yeild Farming
-              </div>
-
-              <div className="opacity-80 text-white text-base font-medium font-['Helvetica Now Display'] leading-none">
-                Dashboard
-              </div>
-
-              <div className="opacity-80 text-white text-base font-medium font-['Helvetica Now Display'] leading-none">
-                Staking
-              </div>
-            </div> */}
             {renderMenuLists}
           </div>
 
@@ -82,7 +70,7 @@ const Header: React.FC = () => {
                 <img src={moon} alt="" />
               </div>
             </div>
-            <div className=" pl-1 pr-3 justify-center items-center gap-2.5 inline-flex  bg-neutral-800 rounded-xl h-10 ">
+            {/* <div className=" pl-1 pr-3 justify-center items-center gap-2.5 inline-flex  bg-neutral-800 rounded-xl h-10 ">
               <div className="w-[34.43px] h-[32.76px] px-[7px] py-[9px] bg-zinc-500 rounded-[10px] flex-col justify-center items-center gap-2.5 inline-flex">
                 <div className="w-[20.43px] h-[14.76px] relative">
                   <img src={token} alt="" />
@@ -95,7 +83,10 @@ const Header: React.FC = () => {
               <div className="w-15 h-15 relative">
                 <img src={arrow} alt="" />
               </div>
-            </div>
+            </div> */}
+            <button className=" pl-1 pr-3 justify-center items-center gap-2.5 inline-flex  bg-neutral-800 rounded-xl h-10 ">
+              <WalletModal />
+            </button>
           </div>
         </div>
       </div>

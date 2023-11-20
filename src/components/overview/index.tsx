@@ -108,7 +108,7 @@ function Overview() {
         <div className=" bg-zinc-900 rounded-[20px]">
           <div className="px-4 py-4">
             <div className="justify-between inline-flex w-full  gap-x-20 mb-8">
-              <div className="opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
+              <div className=" opacity-40 text-white text-sm font-medium font-['Helvetica Now Display'] leading-tight ">
                 Index Price
               </div>
               <div className=" bg-zinc-800 rounded-[20px] p-2">
