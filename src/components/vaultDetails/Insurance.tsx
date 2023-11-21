@@ -2,7 +2,7 @@ import { usdt, arrowup } from "../../assets/icons";
 
 function Insurance() {
   return (
-    <div className="my-8 px-6 py-5 bg-zinc-900 rounded-xl flex-col justify-start items-start gap-6 inline-flex">
+    <div className="px-6 py-5 bg-zinc-900 rounded-xl flex-col justify-start items-start gap-6 inline-flex">
       <div className="self-stretch justify-between items-center inline-flex">
         <div className="text-white text-2xl font-bold font-['Helvetica Now Display'] leading-loose">
           Insurance

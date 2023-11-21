@@ -2,7 +2,7 @@ import { Question } from "../../assets/icons";
 
 function Activeboost() {
   return (
-    <div className=" px-6 py-5 bg-zinc-900 rounded-xl flex-col justify-start items-start gap-6 inline-flex w-[100%]">
+    <div className="my-8 px-6 py-5 bg-zinc-900 rounded-xl flex-col justify-start items-start gap-6 inline-flex w-[100%]">
       <div className="self-stretch justify-start items-center gap-3 inline-flex">
         <div>
           <span className="text-white text-2xl font-bold font-['Helvetica Now Display'] leading-loose">
