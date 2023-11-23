@@ -1,11 +1,11 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const MyVaults = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className=" ">
-      <div className="text-white text-xl font-bold font-['Helvetica Now Display'] leading-[30px] py-4">
+      {/* <div className="text-white text-xl font-bold font-['Helvetica Now Display'] leading-[30px] py-4">
         You haven't deposited in any vaults.
       </div>
       <div className="text-white text-base font-medium font-['Helvetica Now Display'] leading-tight">
@@ -18,7 +18,7 @@ const MyVaults = () => {
         <div className=" text-center text-white text-base font-bold font-['Helvetica Now Display'] leading-normal tracking-wide">
           View All Vaults
         </div>
-      </button>
+      </button> */}
     </div>
   );
 };

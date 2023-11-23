@@ -85,19 +85,19 @@ const Deposit = () => {
         <button
           onClick={onClickSelectToken}
           ref={modalRef}
-          className=" px-4 py-3 bg-zinc-900 rounded-xl  items-center gap-4 inline-flex"
+          className=" px-4 py-3 bg-zinc-900 rounded-xl gap-2 items-center  inline-flex"
         >
           <div className="w-12 h-6  inline-flex">
-            <div className="w-6 h-6 left-0 top-0 ">
+            <div className="w-8 h-6 absolute ">
               <img src={btc} alt="" />
             </div>
-            <div className="w-8 h-6 top-0  ">
+            <div className="w-8 h-6 relative left-[14px] ">
               <img src={usdt} alt="" />
             </div>
           </div>
 
-          <div className="opacity-30 justify-center items-center gap-2.5 flex">
-            <div className="w-6 h-6 ">
+          <div className="opacity-30 justify-center items-center flex">
+            <div className="w-4 ">
               <img src={arrow} alt="" />
             </div>
           </div>
@@ -147,36 +147,6 @@ const Deposit = () => {
                 })}
               </>
             )}
-
-            {/* <div className="py-2 pl-2 self-stretch justify-start items-start inline-flex gap-2">
-              <img src={btc} alt="" />
-
-              <div className="self-stretch h-6 text-white text-base font-medium font-['Helvetica Now Display'] leading-normal">
-                Bitcoin
-              </div>
-            </div> */}
-
-            {/* <div className="py-2 pl-2 self-stretch justify-start items-start inline-flex gap-2">
-              <img src={Ethereum} alt="" />
-
-              <div className="self-stretch h-6 text-white text-base font-medium font-['Helvetica Now Display'] leading-normal">
-                Ethereum
-              </div>
-            </div>
-            <div className="py-2 pl-2 self-stretch justify-start items-start inline-flex gap-2">
-              <img src={usdt} alt="" />
-
-              <div className="self-stretch h-6 text-white text-base font-medium font-['Helvetica Now Display'] leading-normal">
-                USDT
-              </div>
-            </div>
-            <div className="py-2 pl-2 self-stretch justify-start items-start inline-flex gap-2">
-              <img src={Polygon} alt="" />
-
-              <div className="self-stretch h-6 text-white text-base font-medium font-['Helvetica Now Display'] leading-normal">
-                Matic
-              </div>
-            </div> */}
           </div>
         )}
         <div className=" grow shrink basis-0 h-12 px-4 py-3 rounded-xl justify-between items-center flex">
@@ -214,11 +184,11 @@ const Deposit = () => {
         </div>
       </div>
 
-      <div className="w-full self-stretch px-6 py-3 bg-red-500 rounded-xl justify-center items-center gap-2.5 inline-flex">
+      <button className="w-full self-stretch px-6 py-3 bg-red-500 rounded-xl justify-center items-center gap-2.5 inline-flex">
         <div className=" text-center text-white text-base font-bold font-['Helvetica Now Display'] leading-normal tracking-wide">
           Deposit
         </div>
-      </div>
+      </button>
       <div className="self-stretch h-[130px] p-1 rounded-2xl  flex-col justify-start items-start gap-2.5 flex">
         <div className="self-stretch justify-between items-center inline-flex py-2">
           <div className="h-5 justify-start items-center gap-2 flex">

@@ -17,11 +17,11 @@ function Transfer() {
 
   const renderTab = useMemo(() => {
     return (
-      <div className="justify-between p-1 rounded-2xl  items-center gap-2 flex px-4">
+      <div className=" p-1 rounded-2xl items-center  inline-flex">
         <button
           aria-selected={tab === TabKeys.DEPOSIT}
           onClick={() => setTab(TabKeys.DEPOSIT)}
-          className="w-[158px] p-2 aria-selected:bg-zinc-800 rounded-xl justify-center items-center gap-2.5 flex"
+          className=" py-2 px-10 aria-selected:bg-zinc-800 rounded-xl justify-center items-center gap-2.5 flex"
         >
           <div className="text-white text-xl font-bold font-['Helvetica Now Display'] leading-[30px]">
             Deposit
@@ -30,7 +30,7 @@ function Transfer() {
         <button
           aria-selected={tab === TabKeys.WITHDRAW}
           onClick={() => setTab(TabKeys.WITHDRAW)}
-          className="w-[158px] p-2  aria-selected:bg-zinc-800 rounded-xl justify-center items-center gap-2.5 flex"
+          className=" p-2 px-10 aria-selected:bg-zinc-800 rounded-xl justify-center items-center gap-2.5 flex"
         >
           <div className=" text-white text-xl font-bold font-['Helvetica Now Display'] leading-[30px]">
             Withdraw
@@ -48,9 +48,7 @@ function Transfer() {
   return (
     <div className=" w-full mt-10  p-6 bg-zinc-900 rounded-[20px] flex-col justify-start items-center gap-6 inline-flex">
       {/* <div className="bg-[#010707] h-[62px] p-2 justify-center self-stretch  items-center rounded-2xl"> */}
-      <div className="bg-[#010707]  justify-center self-stretch  items-center rounded-2xl">
-        {renderTab}
-      </div>
+      <div className="bg-[#010707]   items-center rounded-2xl">{renderTab}</div>
       <div className="">{renderTabContent}</div>
       {/* </div> */}
     </div>
