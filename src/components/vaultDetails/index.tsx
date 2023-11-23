@@ -227,7 +227,7 @@ const VaultDetails: React.FC = () => {
               </div>
             </div>
             <div className="self-stretch h-[0px] opacity-5 border border-white"></div>
-            <div className=" justify-start items-start gap-5 inline-flex">
+            <div className="w-full justify-start items-start gap-5 inline-flex">
               <div className="px-6 pt-[30px] pb-5 bg-neutral-800 rounded-2xl flex-col justify-end items-center gap-[30px] inline-flex">
                 <div className="w-[110px] h-[110px] relative">
                   <div className="w-[110px] h-[110px] left-0 top-0 absolute rounded-full border-8 border-white border-opacity-5">
@@ -254,7 +254,7 @@ const VaultDetails: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-[10px] flex-col justify-center items-start gap-px inline-flex">
+              <div className="flex-1 w-full rounded-[10px] flex-col justify-center items-start gap-px inline-flex">
                 <div className="self-stretch h-[41px] justify-start items-start gap-px inline-flex">
                   <div className="rounded-tl-2xl w-40 self-stretch px-4 py-2 bg-neutral-800 justify-start items-center gap-2 flex">
                     <div className="opacity-50 text-white text-base font-normal font-['Helvetica Now Display'] leading-normal">
