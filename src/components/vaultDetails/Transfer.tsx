@@ -46,12 +46,12 @@ function Transfer() {
   }, [tab]);
 
   return (
-    <div className="w-full mt-10  p-6 bg-zinc-900 rounded-[20px] flex-col justify-start items-center gap-6 inline-flex">
+    <div className=" w-full mt-10  p-6 bg-zinc-900 rounded-[20px] flex-col justify-start items-center gap-6 inline-flex">
       {/* <div className="bg-[#010707] h-[62px] p-2 justify-center self-stretch  items-center rounded-2xl"> */}
       <div className="bg-[#010707]  justify-center self-stretch  items-center rounded-2xl">
         {renderTab}
       </div>
-      <div className="mt-8">{renderTabContent}</div>
+      <div className="">{renderTabContent}</div>
       {/* </div> */}
     </div>
   );
